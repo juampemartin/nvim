@@ -58,11 +58,24 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim"
   use "folke/which-key.nvim"
+  use "ryanoasis/vim-devicons"
+  use "iamcco/markdown-preview.nvim"
+  use "norcalli/nvim-colorizer.lua"
+  use "tomlion/vim-solidity"
+  use "andweeb/presence.nvim"
+  use "rhysd/open-pdf.vim"
+  use "shougo/unite.vim"
+  use "p00f/nvim-ts-rainbow"
+  -- Curson blinking animations
+  use "karb94/neoscroll.nvim"
+  use "danilamihailov/beacon.nvim"
 
   -- Colorschemes
-  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
   use "gruvbox-community/gruvbox"
+  use "rakr/vim-one"
+  use "ayu-theme/ayu-vim"
+  use "severij/vadelma"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -97,6 +110,9 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"
+
+  -- Prettier
+  use "prettier/vim-prettier"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
