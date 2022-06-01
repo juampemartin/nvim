@@ -76,6 +76,7 @@ return packer.startup(function(use)
   use "rakr/vim-one"
   use "ayu-theme/ayu-vim"
   use "severij/vadelma"
+  use "folke/tokyonight.nvim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
