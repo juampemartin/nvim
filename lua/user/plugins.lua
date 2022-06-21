@@ -48,10 +48,10 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
   use "kyazdani42/nvim-tree.lua"
-  use "akinsho/bufferline.nvim"
+  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+  use {"akinsho/toggleterm.nvim", tag = 'v1.*'}
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
-  use "akinsho/toggleterm.nvim"
   use "ahmedkhalf/project.nvim"
   use "lewis6991/impatient.nvim"
   use "lukas-reineke/indent-blankline.nvim"
@@ -66,16 +66,13 @@ return packer.startup(function(use)
   use "rhysd/open-pdf.vim"
   use "shougo/unite.vim"
   use "p00f/nvim-ts-rainbow"
-  -- Curson blinking animations
-  use "karb94/neoscroll.nvim"
-  use "danilamihailov/beacon.nvim"
 
   -- Colorschemes
   use "lunarvim/darkplus.nvim"
+  use "lunarvim/onedarker.nvim"
+  use { "catppuccin/nvim", as = "catppuccin "}
+  use "shaunsingh/moonlight.nvim"
   use "gruvbox-community/gruvbox"
-  use "rakr/vim-one"
-  use "ayu-theme/ayu-vim"
-  use "severij/vadelma"
   use "folke/tokyonight.nvim"
 
   -- cmp plugins

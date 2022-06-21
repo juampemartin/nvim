@@ -20,7 +20,6 @@ require "user.indentline"
 require "user.whichkey"
 require "user.autocommands"
 require "user.colorizer"
-require "user.neoscroll"
-require "user.beacon"
 require "user.rainbow"
 vim.cmd "set colorcolumn=80"
+-- vim.cmd[[highlight Normal guibg=none]]
