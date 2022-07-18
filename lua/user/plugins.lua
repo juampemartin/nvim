@@ -61,19 +61,15 @@ return packer.startup(function(use)
   use "ryanoasis/vim-devicons"
   use "iamcco/markdown-preview.nvim"
   use "norcalli/nvim-colorizer.lua"
-  use "tomlion/vim-solidity"
   use "andweeb/presence.nvim"
-  use "rhysd/open-pdf.vim"
   use "shougo/unite.vim"
   use "p00f/nvim-ts-rainbow"
 
   -- Colorschemes
   use "lunarvim/darkplus.nvim"
-  use "lunarvim/onedarker.nvim"
-  use { "catppuccin/nvim", as = "catppuccin "}
-  use "shaunsingh/moonlight.nvim"
   use "gruvbox-community/gruvbox"
   use "folke/tokyonight.nvim"
+  use "ayu-theme/ayu-vim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -88,10 +84,12 @@ return packer.startup(function(use)
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
-  -- LSP
+  -- LSP & Copilot
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "nvim-lua/lsp-status.nvim"
+  use "jose-elias-alvarez/null-ls.nvim"
+  use {"github/copilot.vim"} -- AI Pair Programmer
 
   -- Telescope
   use {

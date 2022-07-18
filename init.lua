@@ -21,5 +21,6 @@ require "user.whichkey"
 require "user.autocommands"
 require "user.colorizer"
 require "user.rainbow"
+require "user.copilot"
 vim.cmd "set colorcolumn=80"
 -- vim.cmd[[highlight Normal guibg=none]]
